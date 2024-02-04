@@ -1,7 +1,7 @@
 nums = [3, -4, 2, -1, 3, 4, -8, 7, -1]
 
 def maxSubArray(nums):
-    output = recMax(nums, 0, len(nums))
+    output = recursiveHelper(nums, 0, len(nums))
     print("Max subArray sum: " + str(output[3]))
     print("Found at: [" + str(output[6]) + ", " + str(output[7]) + "]")
 
