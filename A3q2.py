@@ -6,14 +6,14 @@ def maxSubArray(nums):
     print("Found at: [" + str(output[6]) + ", " + str(output[7]) + "]")
 
 # Input arguments: 'nums' is the list of numbers, 'first' is the first index, 'last' is the last index,
-def recMax(nums, first, last):
+def recursiveHelper(nums, first, last):
     length = last-first
     if length == 1:
         # [full_sum, left_max, right_max, max_sum, left_end, right_start, left_index, right_index]
         return [nums[first], nums[first], nums[first], nums[first], first, first, first, first]
     half = length//2
-    left = recMax(nums, first, first+half)
-    right = recMax(nums, first+half, last)
+    left = recursiveHelper(nums, first, first+half)
+    right = recursiveHelper(nums, first+half, last)
     full_sum = left[0] + right[0]
     part_sum = left[2] + right[1]
 
