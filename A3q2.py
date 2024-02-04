@@ -48,6 +48,7 @@ def recMax(nums, first, last):
         max_sum = part_sum
         left_index = left[5]
         right_index = right[4]
+        
     return [full_sum, left_max, right_max, max_sum, left_end, right_start, left_index, right_index]
     # Returns a list of 8 elements:
         # [full_sum, left_max, right_max, max_sum, left_end, right_start, left_index, right_index]
