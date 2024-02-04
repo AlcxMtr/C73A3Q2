@@ -52,7 +52,7 @@ def recursiveHelper(nums, first, last):
     return [full_sum, left_max, right_max, max_sum, left_end, right_start, left_index, right_index]
     # Returns a list of 8 elements:
         # [full_sum, left_max, right_max, max_sum, left_end, right_start, left_index, right_index]
-        # full_sum is the sum of the subproblem
+        # full_sum is the sum of the subtree
         # left_max is the sum of the maximum subarray starting from the leftmost index
         # right_max is the sum of the maximum subarray starting from the rightmost index
         # max_sum is the sum of the maximum subarray
